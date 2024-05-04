@@ -1,0 +1,16 @@
+<h1>Valorant Personajes</h1>
+<hr />
+
+<div class="row">
+  <div class="col">
+    <vct-list
+      [characterList]="characters"
+      (onDelete)="onDeleteCharacter($event)"
+    ></vct-list>
+  </div>
+  <div class="col">
+    <vct-add-character
+      (onNewCharacter)="onNewCharacter($event)"
+    ></vct-add-character>
+  </div>
+</div>
